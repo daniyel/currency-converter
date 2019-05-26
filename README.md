@@ -10,6 +10,8 @@ Replace `REACT_APP_OPEN_EXCHANGE_RATES_APP_ID` in `.env` with your `app_id`, tha
 
 Notice: Free version is limited for converting values between `USD` and other currencies. For conversion between other currencies, we need either `The Developer`, `The Enterprise` or `The Unlimited` plan.
 
+Install dependencies `npm i` or `yarn install`.
+
 ## Development
 
 In the project directory, you can run:
