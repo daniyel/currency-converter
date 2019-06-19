@@ -32,7 +32,7 @@ describe('components', () => {
             expect(wrapper.state('targetCurrency')).toEqual('');
             wrapper.find('select.currency-select-target').simulate('change', { target: { value : 'EUR' }});
             expect(wrapper.state('targetCurrency')).toEqual('EUR');
-            expect(wrapper.find('select.currency-select-target option[disabled=true]').props().value).toBe('USD');
+            expect(wrapper.find('select.currency-select-target option[disabled=true]').props().value).toBe('EUR');
 
             jest.useFakeTimers();
             wrapper.instance().handleForm(new Event('submit'));

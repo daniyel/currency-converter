@@ -107,7 +107,7 @@ export class Converter extends Component {
             <form onSubmit={this.handleForm} id="currencyConvertForm">
                 <input className="input" type="text" name="amount" placeholder="Amount" value={this.state.amount ? this.state.amount : ''} onChange={this.handleAmountChange} />
                 <div className="currency-select">
-                    <select className="select currency-select-source" onChange={this.handleSourceCurrencyChange} value={''}>
+                    <select className="select currency-select-source" onChange={this.handleSourceCurrencyChange} value={this.state.sourceCurrency}>
                         {this.state.currencies.map((currency, index) => (
                             <option value={currency.code} key={index} disabled={currency.code === this.state.sourceCurrency && currency.code !== ''}>{currency.text}</option>
                         ))}
@@ -133,9 +133,9 @@ export class Converter extends Component {
                     </svg>
                 </div>
                 <div className="currency-select">
-                    <select className="select currency-select-target" onChange={this.handleTargetCurrencyChange} value={''}>
+                    <select className="select currency-select-target" onChange={this.handleTargetCurrencyChange} value={this.state.targetCurrency}>
                         {this.state.currencies.map((currency, index) => (
-                            <option value={currency.code} key={index} disabled={currency.code === this.state.sourceCurrency && currency.code !== ''}>{currency.text}</option>
+                            <option value={currency.code} key={index} disabled={currency.code === this.state.targetCurrency && currency.code !== ''}>{currency.text}</option>
                         ))}
                     </select>
                     <ArrowDownIcon />
