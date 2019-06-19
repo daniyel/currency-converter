@@ -16,19 +16,19 @@ Install dependencies `npm i` or `yarn install`.
 
 In the project directory, you can run:
 
-### `npm start` or `yarn start`
+`npm start` or `yarn start`
 
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.
 
-### `npm test` or `yarn test`
+`npm test` or `yarn test`
 
 Launches the test runner in the interactive watch mode.
 
 ## Production
 
-### `npm run build`
+`npm run build`
 
 Builds the app for production to the `build` folder.
